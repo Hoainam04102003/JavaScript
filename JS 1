@@ -1,0 +1,198 @@
+// var id1 = Symbol("id");
+// var id2 = Symbol("id");
+// console.log(id1 === id2);
+// console.log(id1);
+// var myFunction = function() {
+// 	console.log("Hi, xin chào mọi người^^");
+// }
+// myFunction();
+// function myFunction1() {
+//   console.log("Đủ 20 tuổi");
+// }
+// myFunction1();
+
+// var myArray = [
+// 	"JavaScript",
+// 	"PHP",
+// 	"C++",
+// 	"Python"];
+// console.log(myArray);
+// console.log(typeof myArray);
+
+// var result = "A" && "B" && "C";
+// var result = "A" && undefined || "C";
+// console.log(result);
+
+// var fullName = "Hoai Nam";
+// var laugh = "ahahahaha" + "hihihihihi";
+// console.log(fullName.lengh);
+// console.log("My name is " + fullName);
+// console.log(`Tên cậu là ${fullName} à?`);
+
+// var myString = "hoc JS tai JS JS F8!   ";
+// console.log(myString.indexOf("JS"));
+// console.log(myString.indexOf("JS", 6));
+// console.log(myString.lastIndexOf("JS"));
+// console.log(myString.search("JS")); var age = 20;
+
+// var pi = 3.1415;
+// var age = 20;
+// var myString = age.toString();
+// console.log(pi.toString());
+
+// var languages = [
+// 	"JavaScript",
+// 	"PHP",
+// 	"HTML",
+// 	null,
+// 	function() {},
+// 	12,
+// 	undefined,
+// 	{}
+// ];
+// console.log(languages);
+// console.log(languages.length);
+// console.log(languages[4]);
+// // console.log(languages.join("A"));
+// console.log(languages.pop());
+// console.log(languages.push("Python", "Java", 100));
+// console.log(languages.shift());
+// languages.splice(1, 2, "Dart", "CSS");
+// console.log(languages);
+// var languages2 = [
+// 	"SQL",
+// 	setName = function() {
+// 		prompt("Nhập họ tên của bạn: ");}];
+// console.log(languages.concat(languages2));
+
+// function showDialog() {
+//     alert("Hi, xin chào mọi người");
+// }
+// // showDialog();
+
+// function writeLog(message1, message2) {
+//     console.log(message1);
+//     console.log(message2);
+// }
+// writeLog("Test message", "Successed");
+
+// function writeLog() {
+//     console.log(arguments);
+// }
+// writeLog("Test message", "Successed", "End");
+
+// function writeLog1() {
+// 	for (var i = 0; i < arguments.length; i++) {
+// 		console.log(`Arguments ${i + 1}: ${arguments[i]}`);
+// 	}
+// };
+// writeLog1("test message", "successed", "end");
+// writeLog();
+
+// function writeLog2() {
+// 	var myString = "";
+// 	for (var argu of arguments) {
+//     if (argu === "end") {
+// 			myString += `${argu}`;
+//     } else {
+// 		myString += `${argu} -> `;
+//     };
+// 	};
+// 	console.log(myString);
+// };
+// writeLog2("test message", "checking", "successed", "end");
+
+// function cong(a, b) {
+// 	return a + b;
+// 	return a.toString() + b.toString();
+// };
+// var result = cong(3, 6);
+// console.log(result);
+
+// function showMessage() {
+// 	function showMessage2() {
+// 		console.log("Message 2");
+// 	};
+// 	showMessage2();
+//   console.log("Message 1")
+// };
+// showMessage();
+
+// function User(firstName, lastName, avatar) {
+// 	this.firstName = firstName;
+// 	this.lastName = lastName;
+// 	this.avatar = avatar;
+// }
+// var author = new User("Hoai", "Nam", "avatar1");
+// var user = new User("Mr", "Bin", "avatar2");
+// console.log(author);
+// console.log(user);
+// User.prototype.className = "F8";
+// User.prototype.getClassName = function() {
+// 	return this.className;
+// }
+// console.log(author.className);
+// console.log(user.getClassName());
+
+// var emailKey = "email";
+// var myInfo = {
+// 	name: "Hoai Nam",
+// 	age: 20,
+// 	address: "Ha Dong, Ha Noi",
+// 	[emailKey]: "Coname04102003@gmail.com",
+// 	getName: function() {
+// 		return this.name;
+// 	},
+// };
+// myInfo.email = "Conam04102003@gmail.com";
+// myInfo["My-email"] = "Conam04102003@gmail.com";
+// console.log(myInfo);
+// var myKey = "address";
+// console.log(myInfo[myKey]);
+// delete myInfo.age;
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+// Person.prototype.sayHello = function() {
+//   console.log(`Hello, my name is ${this.name}. I'm ${this.age} years old`);
+// }
+// var person = new Person("Hoai Nam", 20);
+// var person1 = new Person("Duc Lam", 30); 
+// person.sayHello();
+// person1 .sayHello();
+
+// var date = new Date();
+// console.log(typeof date);
+// console.log(date);
+// var year = date.getFullYear();
+// var month = date.getMonth() + 1;
+// // getMonth() sẽ trả về gía trị = tháng hiện tại - 1
+// var day = date.getDate();
+// console.log(`${day}:${month}:${year}`);
+
+// var date = 3;
+// if (date === 2) {
+// 	console.log("Hôm nay là thứ 2");
+// } else if (date === 3) {
+// 	console.log("Hôm nay là thứ 3");
+// } else if (date === 4) {
+// 	console.log("Hôm nay là thứ 4");
+// } else {
+// 	console.log("Không có thông tin");
+// }
+
+// var course = {
+// 	name: "JavaScript",
+// 	age: 400
+// }
+// lệnh if else thông thường
+// if (course.coin > 0) {
+// 	console.log(`${course.coin} coins`);
+// } else {
+// 	console.log("Miễn phí");
+// }
+// toán tử 3 ngôi
+// var result = course.coin > 0? `${course.coin} coins`: "Miễn phí";
+// console.log(result);
